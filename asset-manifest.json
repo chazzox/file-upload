@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/file-upload/static/css/main.9e3ea39a.chunk.css",
+    "main.js": "/file-upload/static/js/main.400d0c9a.chunk.js",
+    "main.js.map": "/file-upload/static/js/main.400d0c9a.chunk.js.map",
+    "runtime-main.js": "/file-upload/static/js/runtime-main.0e8a8b70.js",
+    "runtime-main.js.map": "/file-upload/static/js/runtime-main.0e8a8b70.js.map",
+    "static/js/2.39b99893.chunk.js": "/file-upload/static/js/2.39b99893.chunk.js",
+    "static/js/2.39b99893.chunk.js.map": "/file-upload/static/js/2.39b99893.chunk.js.map",
+    "index.html": "/file-upload/index.html",
+    "precache-manifest.84cf175e1e41133b203fc28d6e9f1c1e.js": "/file-upload/precache-manifest.84cf175e1e41133b203fc28d6e9f1c1e.js",
+    "service-worker.js": "/file-upload/service-worker.js",
+    "static/css/main.9e3ea39a.chunk.css.map": "/file-upload/static/css/main.9e3ea39a.chunk.css.map",
+    "static/js/2.39b99893.chunk.js.LICENSE.txt": "/file-upload/static/js/2.39b99893.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/file-upload/static/media/screenshot0.d124c61f.png",
+    "static/media/seshcraft.png": "/file-upload/static/media/seshcraft.6cb2b30c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e8a8b70.js",
+    "static/js/2.39b99893.chunk.js",
+    "static/css/main.9e3ea39a.chunk.css",
+    "static/js/main.400d0c9a.chunk.js"
+  ]
+}
