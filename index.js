@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
 		cb(null, 'upload');
 	},
 	filename: function (req, file, cb) {
-		cb(null, 'yeah.zip');
+		cb(null, 'seshcraft.zip');
 	}
 });
 const upload = multer({ storage: storage });
@@ -35,12 +35,9 @@ app.use(function (req, res, next) {
 const port = 8000;
 
 app.get('/download', (req, res) => {
-	const file = __dirname + "/upload/seshcraft.zip";
-	res.setHeader(
-	  "Content-disposition",
-	  "attachment; filename=" + path.basename(file)
-	);
-	res.setHeader("Content-type", mime.lookup(file));
+	const file = __dirname + '/upload/seshcraft.zip';
+	res.setHeader('Content-disposition', 'attachment; filename=' + path.basename(file));
+	res.setHeader('Content-type', mime.lookup(file));
 	fs.createReadStream(file).pipe(res);
 });
 
