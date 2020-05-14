@@ -1,9 +1,8 @@
 const express = require('express');
-const path = require('path');
-const mime = require('mime');
 const app = express();
-const fs = require('fs');
 const multer = require('multer');
+
+const port = 8080;
 
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
@@ -21,17 +20,9 @@ app.use(function (req, res, next) {
 	next();
 });
 
-const port = 8080;
-
-app.get('/download', (req, res) => {
-	const file = __dirname + '/upload/seshcraft.zip';
-	res.setHeader('Content-disposition', 'attachment; filename=' + path.basename(file));
-	res.setHeader('Content-type', mime.lookup(file));
-	fs.createReadStream(file).pipe(res);
-});
+app.use('/download', express.static(__dirname + '/upload'));
 
 app.post('/upload', function (req, res) {
-	console.log(req.query.pwd);
 	if (req.query.pwd === '3tVXSRUkKxpyV3X9')
 		upload(req, res, function (err) {
 			if (err instanceof multer.MulterError) {
